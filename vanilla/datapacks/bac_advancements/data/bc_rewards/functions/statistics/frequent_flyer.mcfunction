@@ -1,0 +1,8 @@
+execute if score reward bac_settings matches 1 run give @s minecraft:red_shulker_box{BlockEntityTag:{Items:[{Slot:3b,id:"minecraft:firework_rocket",Count:64b,tag:{Fireworks:{Flight:3b}}},{Slot:4b,id:"minecraft:firework_rocket",Count:64b,tag:{Fireworks:{Flight:3b}}},{Slot:5b,id:"minecraft:firework_rocket",Count:64b,tag:{Fireworks:{Flight:3b}}},{Slot:12b,id:"minecraft:firework_rocket",Count:64b,tag:{Fireworks:{Flight:3b}}},{Slot:13b,id:"minecraft:firework_rocket",Count:64b,tag:{Fireworks:{Flight:3b}}},{Slot:14b,id:"minecraft:firework_rocket",Count:64b,tag:{Fireworks:{Flight:3b}}},{Slot:21b,id:"minecraft:firework_rocket",Count:64b,tag:{Fireworks:{Flight:3b}}},{Slot:22b,id:"minecraft:firework_rocket",Count:64b,tag:{Fireworks:{Flight:3b}}},{Slot:23b,id:"minecraft:firework_rocket",Count:64b,tag:{Fireworks:{Flight:3b}}}]}}
+execute if score reward bac_settings matches 1 run tellraw @s {"color":"green","text":" +1 ","extra":[{"translate":"block.minecraft.red_shulker_box"}]}
+execute if score reward bac_settings matches 1 run tellraw @s {"color":"green","text":" +9x64 ","extra":[{"translate":"item.minecraft.firework_rocket"}]}
+execute if score exp bac_settings matches 1 run xp add @s 500
+execute if score exp bac_settings matches 1 run tellraw @s {"color":"blue","text":" +500 ","extra":[{"translate":"Experience"}]}
+scoreboard players add @s bac_advancements 1
+
+execute if score trophy bac_settings matches 1 run function bc_rewards:trophy/statistics/frequent_flyer

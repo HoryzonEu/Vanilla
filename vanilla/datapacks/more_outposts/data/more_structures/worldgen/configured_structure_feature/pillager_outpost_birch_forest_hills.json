@@ -1,0 +1,7 @@
+{
+  "config": {
+    "start_pool": "more_structures:outposts/birch",
+    "size": 7
+  },
+  "type": "minecraft:pillager_outpost"
+}

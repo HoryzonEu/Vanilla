@@ -1,0 +1,33 @@
+{
+  "name": "kaisyn:castles/castle",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:castles/castle_ruin0",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:castles/castle_ruin1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:castles/castle_ruin2",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

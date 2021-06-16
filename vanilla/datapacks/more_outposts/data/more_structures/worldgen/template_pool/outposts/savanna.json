@@ -1,0 +1,15 @@
+{
+  "name": "more_structures:outposts/savanna",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "more_structures:outposts/savanna/base",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}
