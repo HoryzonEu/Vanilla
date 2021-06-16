@@ -62,8 +62,7 @@
     ],
     [
       "minecraft:rare_dripstone_cluster",
-      "minecraft:rare_small_dripstone",
-	  "shm_cnc:patch_sculk"
+      "minecraft:rare_small_dripstone"
     ],
     [
       "minecraft:prototype_glow_lichen",
@@ -76,16 +75,7 @@
       "minecraft:patch_pumpkin",
       "minecraft:patch_cactus_desert",
       "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
-      "minecraft:patch_tall_grass_2",
-      "minecraft:prototype_glow_lichen",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
-      "minecraft:lush_caves_clay",
-      "minecraft:lush_caves_vegetation",
-      "minecraft:rooted_azalea_trees",
-      "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "minecraft:spring_lava"
     ],
     [
       "minecraft:freeze_top_layer"
@@ -172,12 +162,6 @@
     "underground_water_creature": [
       {
         "type": "minecraft:glow_squid",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
-      },
-      {
-        "type": "minecraft:axolotl",
         "weight": 10,
         "minCount": 4,
         "maxCount": 6

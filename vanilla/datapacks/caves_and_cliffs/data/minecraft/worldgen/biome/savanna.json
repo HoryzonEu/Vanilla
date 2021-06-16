@@ -61,8 +61,7 @@
     ],
     [
       "minecraft:rare_dripstone_cluster",
-      "minecraft:rare_small_dripstone",
-	  "shm_cnc:patch_sculk"
+      "minecraft:rare_small_dripstone"
     ],
     [
       "minecraft:patch_tall_grass",
@@ -76,8 +75,6 @@
       "minecraft:patch_pumpkin",
       "minecraft:prototype_spring_water",
       "minecraft:spring_lava",
-      "minecraft:patch_tall_grass_2",
-      "minecraft:prototype_glow_lichen",
       "minecraft:lush_caves_ceiling_vegetation",
       "minecraft:cave_vines",
       "minecraft:lush_caves_clay",

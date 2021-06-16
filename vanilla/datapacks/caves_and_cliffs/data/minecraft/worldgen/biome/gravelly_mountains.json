@@ -27,7 +27,8 @@
       "minecraft:lake_lava"
     ],
     [
-      "minecraft:amethyst_geode"
+      "minecraft:amethyst_geode",
+      "minecraft:large_dripstone"
     ],
     [
       "minecraft:monster_room"
@@ -63,8 +64,9 @@
     [
       "minecraft:rare_dripstone_cluster",
       "minecraft:rare_small_dripstone",
-	  "minecraft:prototype_ore_infested",
-	  "shm_cnc:patch_sculk"
+      "minecraft:prototype_ore_infested",
+      "minecraft:dripstone_cluster",
+      "minecraft:small_dripstone"
     ],
     [
       "minecraft:prototype_glow_lichen",
@@ -76,16 +78,7 @@
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
       "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
-      "minecraft:patch_tall_grass_2",
-      "minecraft:prototype_glow_lichen",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
-      "minecraft:lush_caves_clay",
-      "minecraft:lush_caves_vegetation",
-      "minecraft:rooted_azalea_trees",
-      "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "minecraft:spring_lava"
     ],
     [
       "minecraft:freeze_top_layer"

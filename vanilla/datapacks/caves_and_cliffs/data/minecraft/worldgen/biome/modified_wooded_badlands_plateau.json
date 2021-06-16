@@ -67,8 +67,7 @@
       "minecraft:rare_dripstone_cluster",
       "minecraft:rare_small_dripstone",
       "minecraft:dripstone_cluster",
-      "minecraft:small_dripstone",
-	  "shm_cnc:patch_sculk"
+      "minecraft:small_dripstone"
     ],
     [
       "minecraft:prototype_glow_lichen",

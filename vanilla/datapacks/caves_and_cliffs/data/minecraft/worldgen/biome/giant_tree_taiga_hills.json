@@ -28,8 +28,8 @@
     ],
     [
       "minecraft:amethyst_geode",
-      "minecraft:large_dripstone",
-      "minecraft:forest_rock"
+      "minecraft:forest_rock",
+      "minecraft:large_dripstone"
     ],
     [
       "minecraft:monster_room"
@@ -65,8 +65,7 @@
       "minecraft:rare_dripstone_cluster",
       "minecraft:rare_small_dripstone",
       "minecraft:dripstone_cluster",
-      "minecraft:small_dripstone",
-	  "shm_cnc:patch_sculk"
+      "minecraft:small_dripstone"
     ],
     [
       "minecraft:patch_large_fern",
@@ -200,12 +199,6 @@
     "underground_water_creature": [
       {
         "type": "minecraft:glow_squid",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
-      },
-      {
-        "type": "minecraft:axolotl",
         "weight": 10,
         "minCount": 4,
         "maxCount": 6

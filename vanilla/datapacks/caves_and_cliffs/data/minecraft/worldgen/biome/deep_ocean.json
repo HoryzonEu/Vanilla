@@ -26,8 +26,7 @@
       "minecraft:lake_lava"
     ],
     [
-      "minecraft:amethyst_geode",
-      "minecraft:large_dripstone"
+      "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room"
@@ -61,10 +60,7 @@
     ],
     [
       "minecraft:rare_dripstone_cluster",
-      "minecraft:rare_small_dripstone",
-      "minecraft:dripstone_cluster",
-      "minecraft:small_dripstone",
-	  "shm_cnc:patch_sculk"
+      "minecraft:rare_small_dripstone"
     ],
     [
       "minecraft:prototype_glow_lichen",
@@ -79,7 +75,14 @@
       "minecraft:spring_lava",
       "minecraft:seagrass_deep",
       "minecraft:seagrass_simple",
-      "minecraft:kelp_cold"
+      "minecraft:kelp_cold",
+      "minecraft:lush_caves_ceiling_vegetation",
+      "minecraft:cave_vines",
+      "minecraft:lush_caves_clay",
+      "minecraft:lush_caves_vegetation",
+      "minecraft:rooted_azalea_trees",
+      "minecraft:spore_blossom",
+      "minecraft:classic_vines_cave_feature"
     ],
     [
       "minecraft:freeze_top_layer"

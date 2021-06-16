@@ -26,7 +26,8 @@
       "minecraft:lake_lava"
     ],
     [
-      "minecraft:amethyst_geode"
+      "minecraft:amethyst_geode",
+      "minecraft:large_dripstone"
     ],
     [
       "minecraft:monster_room"
@@ -61,7 +62,8 @@
     [
       "minecraft:rare_dripstone_cluster",
       "minecraft:rare_small_dripstone",
-	  "shm_cnc:patch_sculk"
+      "minecraft:dripstone_cluster",
+      "minecraft:small_dripstone"
     ],
     [
       "minecraft:prototype_glow_lichen",
@@ -75,16 +77,7 @@
       "minecraft:prototype_spring_water",
       "minecraft:spring_lava",
       "minecraft:seagrass_deep_warm",
-      "minecraft:seagrass_simple",
-      "minecraft:patch_tall_grass_2",
-      "minecraft:prototype_glow_lichen",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
-      "minecraft:lush_caves_clay",
-      "minecraft:lush_caves_vegetation",
-      "minecraft:rooted_azalea_trees",
-      "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "minecraft:seagrass_simple"
     ],
     [
       "minecraft:freeze_top_layer"
@@ -166,12 +159,6 @@
     "underground_water_creature": [
       {
         "type": "minecraft:glow_squid",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
-      },
-      {
-        "type": "minecraft:axolotl",
         "weight": 10,
         "minCount": 4,
         "maxCount": 6
