@@ -1,0 +1,15 @@
+{
+  "name": "temple_of_tears:main_island",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "temple_of_tears:main_island",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}
