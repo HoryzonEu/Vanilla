@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "nbt": "{dnl.slime_rod:1b}"
+      },
+      "offhand": {
+        "item": "minecraft:slime_ball"
+      }
+    }
+  }
+}

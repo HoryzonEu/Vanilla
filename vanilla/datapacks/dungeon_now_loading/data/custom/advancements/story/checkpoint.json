@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head"
+    },
+    "title": "Checkpoint!",
+    "description": "Find a player head inside a dungeon chest",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "custom:story/new_start",
+  "criteria": {
+    "find player head": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:player_head",
+            "nbt": "{dnl.checkpoint_head:1b}"
+          }
+        ]
+      }
+    }
+  }
+}

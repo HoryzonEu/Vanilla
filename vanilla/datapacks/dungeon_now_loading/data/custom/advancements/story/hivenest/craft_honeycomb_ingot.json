@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_ingot",
+      "nbt": "{CustomModelData:13001}"
+    },
+    "title": "Sugary Ingot",
+    "description": "Craft a Honeycomb Ingot using the monolith in one of the Hivenest",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "custom:story/hivenest",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{dnl.honeycomb_ingot:1b}"
+          }
+        ]
+      }
+    }
+  }
+}

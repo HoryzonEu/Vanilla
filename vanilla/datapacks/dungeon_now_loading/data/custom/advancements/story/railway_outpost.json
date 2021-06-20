@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:acacia_log"
+    },
+    "title": {
+      "text": "Railway Outpost"
+    },
+    "description": {
+      "text": "Railway abducted by the crossbow barbarians!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "custom:story/clerics_hideout",
+  "criteria": {
+    "locate railway outpost": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "dnl:advancements/locate_dungeon"
+  }
+}

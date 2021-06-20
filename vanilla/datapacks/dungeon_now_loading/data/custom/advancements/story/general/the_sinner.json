@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:apple"
+    },
+    "title": "The Sinner",
+    "description": "Eat any kind of Forbidden Fruit and become a sinner",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "custom:story/new_start",
+  "criteria": {
+    "locate watcher camp": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "nbt": "{dnl.forbidden_fruit:1b}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:dark_prismarine"
+    },
+    "title": {
+      "text": "Deep Oasis"
+    },
+    "description": {
+      "text": "Dive into a deep oasis"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "custom:story/hunters_grave",
+  "criteria": {
+    "locate deep oasis": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "dnl:advancements/locate_dungeon"
+  }
+}

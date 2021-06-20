@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Slime Rod\",\"color\":\"gold\",\"italic\":false}',Lore:['{\"text\":\"Slime Spell\",\"color\":\"dark_purple\",\"italic\":false}','{\"text\":\"Shoots any type of slimeball.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"The effect varies depending on\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"the type of slimeball used.\",\"color\":\"gray\",\"italic\":false}','{\"translate\":\"\"}','{\"text\":\"Cost in Off Hand:\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"1 Slimeball Item\",\"color\":\"blue\",\"italic\":false}']},CustomModelData:14001,dnl.item:1b,dnl.slime_rod:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

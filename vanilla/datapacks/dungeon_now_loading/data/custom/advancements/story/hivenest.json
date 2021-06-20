@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bee_nest"
+    },
+    "title": {
+      "text": "Hivenest"
+    },
+    "description": {
+      "text": "Sneak into queen's nest"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "custom:story/general/locate_dungeon",
+  "criteria": {
+    "locate hivenest": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "dnl:advancements/locate_dungeon"
+  }
+}

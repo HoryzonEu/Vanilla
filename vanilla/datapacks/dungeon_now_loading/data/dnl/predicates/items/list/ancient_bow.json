@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "nbt": "{dnl.ancient_bow:1b}"
+      },
+      "offhand": {
+        "item": "minecraft:ghast_tear"
+      }
+    }
+  }
+}

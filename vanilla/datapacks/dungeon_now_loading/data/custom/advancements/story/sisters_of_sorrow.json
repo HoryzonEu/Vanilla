@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:ghast_tear"
+    },
+    "title": "Sisters of Sorrow",
+    "description": "Defeat the Sisters of Sorrow",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "custom:story/temple_of_tears",
+  "criteria": {
+    "kill guardian ghasts": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 500
+  }
+}

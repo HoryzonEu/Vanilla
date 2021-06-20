@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:slime_block"
+    },
+    "title": {
+      "text": "Slime Sinkhole"
+    },
+    "description": {
+      "text": "Jump down into the sinkhole"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "custom:story/general/locate_dungeon",
+  "criteria": {
+    "locate slime sinkhole": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "dnl:advancements/locate_dungeon"
+  }
+}

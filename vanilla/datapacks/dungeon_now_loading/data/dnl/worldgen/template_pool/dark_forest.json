@@ -1,0 +1,24 @@
+{
+  "name": "dnl:dark_forest",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "cleric_hideout:base",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "gallery_of_illusion:base",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

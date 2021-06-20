@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:honeycomb"
+    },
+    "title": "Bee Swarm",
+    "description": "Stop the bees from hatching by destroying all the nests!",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "custom:story/hivenest",
+  "criteria": {
+    "kill bee swarm": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {}
+}

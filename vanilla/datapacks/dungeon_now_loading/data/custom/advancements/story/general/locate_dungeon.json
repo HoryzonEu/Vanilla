@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:mossy_cobblestone"
+    },
+    "title": "Dungeon Now Loading",
+    "description": "Locate one of Dungeon Now Loading structures",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "custom:story/new_start",
+  "criteria": {
+    "find player head": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

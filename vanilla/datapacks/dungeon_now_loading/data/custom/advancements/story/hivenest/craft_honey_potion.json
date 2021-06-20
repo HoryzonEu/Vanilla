@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{CustomPotionColor:16763190,Enchantments:[{}]}"
+    },
+    "title": "Poison No More!",
+    "description": "Craft a Honey Potion using the monolith in the Witch Lab Hivenest",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "custom:story/hivenest/craft_honeycomb_ingot",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{dnl.honey_potion:1b}"
+          }
+        ]
+      }
+    }
+  }
+}

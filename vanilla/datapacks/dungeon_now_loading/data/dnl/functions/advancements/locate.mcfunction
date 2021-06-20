@@ -1,0 +1,11 @@
+execute if block ~ 1 ~ minecraft:white_wool run advancement grant @s only custom:story/hivenest
+execute if block ~ 1 ~ minecraft:orange_wool run advancement grant @s only custom:story/slime_sinkhole
+execute if block ~ 1 ~ minecraft:magenta_wool run advancement grant @s only custom:story/hunters_grave
+execute if block ~ 1 ~ minecraft:light_blue_wool run advancement grant @s only custom:story/deep_oasis
+execute if block ~ 1 ~ minecraft:yellow_wool run advancement grant @s only custom:story/clerics_hideout
+execute if block ~ 1 ~ minecraft:lime_wool run advancement grant @s only custom:story/railway_outpost
+execute if block ~ 1 ~ minecraft:pink_wool run advancement grant @s only custom:story/watcher_camp
+execute if block ~ 1 ~ minecraft:gray_wool run advancement grant @s only custom:story/crawlers_lair
+execute if block ~ 1 ~ minecraft:light_gray_wool run advancement grant @s only custom:story/gallery_of_illusion
+execute if block ~ 1 ~ minecraft:cyan_wool run advancement grant @s only custom:story/forgotten_field_of_flanders
+execute if block ~ 1 ~ minecraft:purple_wool run advancement grant @s only custom:story/temple_of_tears

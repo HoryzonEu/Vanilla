@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:yellow_shulker_box"
+    },
+    "title": "Pack in the Bee Nest",
+    "description": "Craft a Hive Chest using the monolith in the Leafy Hivenest. Handy item for storing dungeon loots!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "custom:story/hivenest/craft_honeycomb_ingot",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:yellow_shulker_box",
+            "nbt": "{display:{Name:'{\"text\":\"Hive Chest\",\"color\":\"gold\",\"italic\":false}'}}"
+          }
+        ]
+      }
+    }
+  }
+}

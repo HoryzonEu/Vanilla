@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:village",
+  "config": {
+    "start_pool": "dnl:birch_forest",
+    "size": 7
+  }
+}
