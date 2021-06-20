@@ -73,8 +73,8 @@
   ],
   "starts": [
     "more_structures:bastion_remnant_plains",
+    "more_structures:pillager_outpost_plains",
     "minecraft:village_plains",
-    "minecraft:pillager_outpost",
     "minecraft:mineshaft",
     "minecraft:stronghold",
     "minecraft:ruined_portal"

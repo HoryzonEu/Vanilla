@@ -95,7 +95,7 @@
     "minecraft:mineshaft",
     "minecraft:buried_treasure",
     "minecraft:shipwreck_beached",
-    "minecraft:ruined_portal"
+    "minecraft:ruined_portal_jungle"
   ],
   "spawners": {
     "monster": [],

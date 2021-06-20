@@ -75,6 +75,9 @@
     ]
   ],
   "starts": [
+    "more_structures:village_modified_wooded_badlands_plateau",
+    "more_structures:pillager_outpost_modified_wooded_badlands_plateau",
+    "more_structures:bastion_remnant_modified_wooded_badlands_plateau",
     "minecraft:mineshaft_mesa",
     "minecraft:stronghold",
     "minecraft:ruined_portal_mountain"
