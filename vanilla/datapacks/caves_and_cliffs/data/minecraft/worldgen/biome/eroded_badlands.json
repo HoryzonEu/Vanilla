@@ -5,14 +5,12 @@
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
     "sky_color": 7254527,
-    "foliage_color": 10387789,
-    "grass_color": 9470285,
     "fog_color": 12638463,
-    "water_color": 4159204,
-    "water_fog_color": 329011
+    "water_color": 3489035,
+    "water_fog_color": 2302743
   },
   "surface_builder": "minecraft:eroded_badlands",
   "carvers": {
@@ -24,10 +22,7 @@
   },
   "features": [
     [],
-    [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
-    ],
+    [],
     [
       "minecraft:amethyst_geode"
     ],
@@ -60,14 +55,18 @@
       "minecraft:ore_gold_extra",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "minecraft:disk_gravel",
+      "wythers:badlands/cnb_ores_grass",
+      "wythers:generic/heightmap_ore_coarse_dirt_in_grass"
     ],
     [
       "minecraft:rare_dripstone_cluster",
       "minecraft:rare_small_dripstone"
     ],
     [
-      "minecraft:prototype_glow_lichen",
+      "minecraft:glow_lichen",
+      "wythers:badlands/eroded_vegetation",
+      "wythers:badlands/flowers",
       "minecraft:patch_grass_badlands",
       "minecraft:patch_dead_bush_badlands",
       "minecraft:brown_mushroom_normal",
@@ -75,14 +74,19 @@
       "minecraft:patch_sugar_cane_badlands",
       "minecraft:patch_pumpkin",
       "minecraft:patch_cactus_decorated",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava"
+      "minecraft:spring_water",
+      "wythers:badlands/simple_block_red_sandstone"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
+    "more_structures:village_eroded_badlands",
+    "more_structures:pillager_outpost_eroded_badlands",
+    "more_structures:bastion_remnant_eroded_badlands",
     "minecraft:mineshaft_mesa",
     "minecraft:stronghold",
     "minecraft:ruined_portal_mountain"
@@ -147,14 +151,6 @@
         "maxCount": 8
       }
     ],
-    "underground_water_creature": [
-      {
-        "type": "minecraft:glow_squid",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
-      }
-    ],
     "water_creature": [],
     "water_ambient": [],
     "misc": []
@@ -162,8 +158,8 @@
   "spawn_costs": {},
   "player_spawn_friendly": false,
   "precipitation": "none",
-  "temperature": 2.0,
-  "downfall": 0.0,
+  "temperature": 0.8,
+  "downfall": 0,
   "category": "mesa",
-  "depth": 0.1
+  "depth": 0.3
 }

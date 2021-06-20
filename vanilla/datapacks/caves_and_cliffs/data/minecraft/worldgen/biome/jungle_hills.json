@@ -1,31 +1,33 @@
 {
-  "scale": 0.3,
+  "scale": 0.7,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
-    "sky_color": 7842047,
+    "sky_color": 7972607,
     "fog_color": 12638463,
-    "water_color": 4159204,
-    "water_fog_color": 329011
+    "water_color": 3156992,
+    "water_fog_color": 2302743
   },
-  "surface_builder": "minecraft:grass",
+  "surface_builder": "wythers:jungle_hills",
   "carvers": {
     "air": [
       "minecraft:prototype_cave",
       "minecraft:prototype_canyon",
       "minecraft:prototype_crevice"
+    ],
+    "liquid": [
+      "minecraft:underwater_cave"
     ]
   },
   "features": [
-    [],
     [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
+      "wythers:jungle/hills_spikes"
     ],
+    [],
     [
       "minecraft:amethyst_geode",
       "minecraft:large_dripstone"
@@ -36,6 +38,9 @@
     [],
     [],
     [
+      "wythers:jungle/hills_y127_simple_stone",
+      "wythers:generic/ore_base_dripstone",
+      "wythers:generic/heightmap_ore_mossy_cobblestone",
       "minecraft:prototype_ore_dirt",
       "minecraft:prototype_ore_gravel",
       "minecraft:prototype_ore_granite",
@@ -58,34 +63,49 @@
       "minecraft:prototype_underwater_magma",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "minecraft:disk_gravel",
+      "wythers:jungle/hills_replace_diorite_to_dirt"
     ],
     [
-      "minecraft:rare_dripstone_cluster",
-      "minecraft:rare_small_dripstone",
+      "wythers:jungle/rare_dripstone_cluster",
+      "wythers:jungle/rare_small_dripstone",
       "minecraft:dripstone_cluster",
       "minecraft:small_dripstone"
     ],
     [
-      "minecraft:prototype_glow_lichen",
-      "minecraft:bamboo_light",
-      "minecraft:trees_jungle",
-      "minecraft:flower_warm",
+      "minecraft:glow_lichen",
+      "minecraft:lush_caves_ceiling_vegetation",
+      "minecraft:cave_vines",
+      "minecraft:lush_caves_clay",
+      "minecraft:lush_caves_vegetation",
+      "minecraft:rooted_azalea_trees",
+      "minecraft:spore_blossom",
+      "minecraft:classic_vines_cave_feature",
+      "wythers:jungle/hills_vegetation",
+      "minecraft:patch_large_fern",
+      "minecraft:bamboo",
+      "minecraft:patch_dead_bush",
       "minecraft:patch_grass_jungle",
+      "minecraft:patch_waterlilly",
+      "wythers:generic/flower_lily_of_the_valley",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
       "minecraft:patch_melon",
-      "minecraft:prototype_vines"
+      "minecraft:spring_water",
+      "minecraft:vines",
+      "minecraft:seagrass_swamp"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
+    "more_structures:village_jungle_hills",
+    "more_structures:pillager_outpost_jungle_hills",
+    "more_structures:bastion_remnant_jungle_hills",
     "minecraft:jungle_pyramid",
     "minecraft:mineshaft",
     "minecraft:stronghold",
@@ -137,7 +157,7 @@
       },
       {
         "type": "minecraft:witch",
-        "weight": 5,
+        "weight": 10,
         "minCount": 1,
         "maxCount": 1
       },
@@ -145,51 +165,27 @@
         "type": "minecraft:ocelot",
         "weight": 2,
         "minCount": 1,
-        "maxCount": 1
+        "maxCount": 3
       }
     ],
     "creature": [
       {
-        "type": "minecraft:sheep",
-        "weight": 12,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:pig",
-        "weight": 10,
+        "type": "minecraft:hoglin",
+        "weight": 20,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "minecraft:chicken",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:cow",
-        "weight": 8,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:chicken",
-        "weight": 10,
+        "weight": 20,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "minecraft:parrot",
-        "weight": 10,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "minecraft:panda",
-        "weight": 1,
-        "minCount": 1,
-        "maxCount": 2
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 16
       }
     ],
     "ambient": [
@@ -206,17 +202,43 @@
         "weight": 10,
         "minCount": 4,
         "maxCount": 6
+      },
+      {
+        "type": "minecraft:axolotl",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 6
       }
     ],
-    "water_creature": [],
-    "water_ambient": [],
+    "water_creature": [
+      {
+        "type": "minecraft:dolphin",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "water_ambient": [
+      {
+        "type": "minecraft:pufferfish",
+        "weight": 15,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "minecraft:tropical_fish",
+        "weight": 25,
+        "minCount": 8,
+        "maxCount": 8
+      }
+    ],
     "misc": []
   },
   "spawn_costs": {},
-  "player_spawn_friendly": true,
+  "player_spawn_friendly": false,
   "precipitation": "rain",
-  "temperature": 0.95,
-  "downfall": 0.9,
+  "temperature": 0.8,
+  "downfall": 0.6,
   "category": "jungle",
   "depth": 0.45
 }

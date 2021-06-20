@@ -1,30 +1,31 @@
 {
-  "scale": 0.4,
+  "scale": 1.2,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
-    "sky_color": 7842047,
-    "fog_color": 12638463,
-    "water_color": 4159204,
-    "water_fog_color": 329011
+    "grass_color_modifier": "dark_forest",
+    "sky_color": 11842740,
+    "fog_color": 13158600,
+    "water_color": 3156992,
+    "water_fog_color": 2302743
   },
-  "surface_builder": "minecraft:grass",
+  "surface_builder": "wythers:tepui",
   "carvers": {
     "air": [
       "minecraft:prototype_cave",
       "minecraft:prototype_canyon",
       "minecraft:prototype_crevice"
-    ]
+    ],
+    "liquid": []
   },
   "features": [
     [],
     [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
+      "wythers:jungle/modified_lakes"
     ],
     [
       "minecraft:amethyst_geode",
@@ -36,6 +37,10 @@
     [],
     [],
     [
+      "wythers:generic/ore_base_deepslate",
+      "wythers:jungle/modified_ore_tuff",
+      "wythers:jungle/modified_replace_dirt_to_stone",
+      "wythers:generic/heightmap_ore_mossy_cobblestone",
       "minecraft:prototype_ore_dirt",
       "minecraft:prototype_ore_gravel",
       "minecraft:prototype_ore_granite",
@@ -58,33 +63,37 @@
       "minecraft:prototype_underwater_magma",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "minecraft:disk_gravel",
+      "minecraft:prototype_ore_emerald"
     ],
     [
       "minecraft:rare_dripstone_cluster",
       "minecraft:rare_small_dripstone",
       "minecraft:dripstone_cluster",
-      "minecraft:small_dripstone"
+      "minecraft:small_dripstone",
+      "minecraft:prototype_ore_infested"
     ],
     [
-      "minecraft:prototype_glow_lichen",
-      "minecraft:trees_jungle",
-      "minecraft:flower_warm",
+      "minecraft:glow_lichen",
+      "wythers:jungle/modified_cnb_rainforest_vegetation",
+      "wythers:jungle/cnb_sandy_vegetation",
+      "wythers:generic/flower_lily_of_the_valley",
       "minecraft:patch_grass_jungle",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
-      "minecraft:patch_melon",
-      "minecraft:prototype_vines"
+      "minecraft:spring_water",
+      "minecraft:vines"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
+    "more_structures:village_modified_jungle",
+    "more_structures:pillager_outpost_modified_jungle",
+    "more_structures:bastion_remnant_modified_jungle",
     "minecraft:mineshaft",
     "minecraft:stronghold",
     "minecraft:ruined_portal_jungle"
@@ -148,36 +157,6 @@
     ],
     "creature": [
       {
-        "type": "minecraft:sheep",
-        "weight": 12,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:pig",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:chicken",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:cow",
-        "weight": 8,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:chicken",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
         "type": "minecraft:parrot",
         "weight": 10,
         "minCount": 1,
@@ -213,8 +192,8 @@
   "spawn_costs": {},
   "player_spawn_friendly": false,
   "precipitation": "rain",
-  "temperature": 0.95,
-  "downfall": 0.9,
+  "temperature": 0.5,
+  "downfall": 0.8,
   "category": "jungle",
-  "depth": 0.2
+  "depth": 3.7
 }

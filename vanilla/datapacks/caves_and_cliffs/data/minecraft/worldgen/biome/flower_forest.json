@@ -1,16 +1,17 @@
 {
-  "scale": 0.4,
+  "scale": 0.2,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
+    "foliage_color": 16751013,
     "sky_color": 7972607,
     "fog_color": 12638463,
-    "water_color": 4159204,
-    "water_fog_color": 329011
+    "water_color": 4566514,
+    "water_fog_color": 267827
   },
   "surface_builder": "minecraft:grass",
   "carvers": {
@@ -21,11 +22,11 @@
     ]
   },
   "features": [
-    [],
     [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
+      "wythers:forest/flower_cnb_bamboo",
+      "wythers:forest/flower_block_pile_hive"
     ],
+    [],
     [
       "minecraft:amethyst_geode"
     ],
@@ -35,6 +36,8 @@
     [],
     [],
     [
+      "wythers:generic/ore_base_diorite",
+      "wythers:generic/replace_podzol_to_grass",
       "minecraft:prototype_ore_dirt",
       "minecraft:prototype_ore_gravel",
       "minecraft:prototype_ore_granite",
@@ -55,62 +58,51 @@
       "minecraft:prototype_ore_lapis_buried",
       "minecraft:prototype_ore_copper",
       "minecraft:prototype_underwater_magma",
-      "minecraft:disk_sand",
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "wythers:forest/flower_disk_white_concrete_powder",
+      "wythers:forest/flower_disk_clay"
     ],
     [
       "minecraft:rare_dripstone_cluster",
       "minecraft:rare_small_dripstone"
     ],
     [
+      "minecraft:glow_lichen",
+      "minecraft:lush_caves_ceiling_vegetation",
+      "minecraft:cave_vines",
+      "minecraft:lush_caves_clay",
+      "minecraft:lush_caves_vegetation",
+      "minecraft:rooted_azalea_trees",
+      "minecraft:spore_blossom",
+      "minecraft:classic_vines_cave_feature",
       "minecraft:forest_flower_vegetation_common",
-      "minecraft:prototype_glow_lichen",
-      "minecraft:forest_flower_trees",
+      "wythers:forest/flower_vegetation",
       "minecraft:flower_forest",
-      "minecraft:patch_grass_badlands",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava"
+      "minecraft:spring_water",
+      "minecraft:patch_grass_savanna",
+      "wythers:generic/patch_stones_south_1",
+      "wythers:generic/patch_stones_east_1",
+      "wythers:forest/flower_simple_block_spore_blossom"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
+    "more_structures:village_flower_forest",
+    "more_structures:pillager_outpost_flower_forest",
+    "more_structures:bastion_remnant_flower_forest",
     "minecraft:mineshaft",
     "minecraft:stronghold",
     "minecraft:ruined_portal"
   ],
   "spawners": {
     "monster": [
-      {
-        "type": "minecraft:spider",
-        "weight": 100,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:zombie",
-        "weight": 95,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:zombie_villager",
-        "weight": 5,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "minecraft:skeleton",
-        "weight": 100,
-        "minCount": 4,
-        "maxCount": 4
-      },
       {
         "type": "minecraft:creeper",
         "weight": 100,
@@ -131,7 +123,7 @@
       },
       {
         "type": "minecraft:witch",
-        "weight": 5,
+        "weight": 20,
         "minCount": 1,
         "maxCount": 1
       }
@@ -139,33 +131,21 @@
     "creature": [
       {
         "type": "minecraft:sheep",
-        "weight": 12,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:pig",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:chicken",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:cow",
-        "weight": 8,
+        "weight": 20,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "minecraft:rabbit",
-        "weight": 4,
+        "weight": 20,
         "minCount": 2,
         "maxCount": 3
+      },
+      {
+        "type": "minecraft:fox",
+        "weight": 10,
+        "minCount": 2,
+        "maxCount": 4
       }
     ],
     "ambient": [
@@ -182,6 +162,12 @@
         "weight": 10,
         "minCount": 4,
         "maxCount": 6
+      },
+      {
+        "type": "minecraft:axolotl",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 6
       }
     ],
     "water_creature": [],
@@ -191,8 +177,8 @@
   "spawn_costs": {},
   "player_spawn_friendly": false,
   "precipitation": "rain",
-  "temperature": 0.7,
-  "downfall": 0.8,
+  "temperature": 0.8,
+  "downfall": 0.4,
   "category": "forest",
   "depth": 0.1
 }

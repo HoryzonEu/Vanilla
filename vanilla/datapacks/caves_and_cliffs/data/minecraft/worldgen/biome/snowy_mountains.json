@@ -1,18 +1,24 @@
 {
-  "scale": 0.3,
+  "scale": 0.6,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
-    "sky_color": 8364543,
-    "fog_color": 12638463,
+    "particle": {
+      "options": {
+        "type": "minecraft:white_ash"
+      },
+      "probability": 0.2
+    },
+    "sky_color": 13158625,
+    "fog_color": 14474485,
     "water_color": 4159204,
     "water_fog_color": 329011
   },
-  "surface_builder": "minecraft:grass",
+  "surface_builder": "wythers:glacial_mountains",
   "carvers": {
     "air": [
       "minecraft:prototype_cave",
@@ -21,11 +27,11 @@
     ]
   },
   "features": [
-    [],
     [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
+      "wythers:icy/lake_powder_snow",
+      "wythers:caves/ore_ice"
     ],
+    [],
     [
       "minecraft:amethyst_geode"
     ],
@@ -35,6 +41,12 @@
     [],
     [],
     [
+      "wythers:generic/ore_base_deepslate",
+      "wythers:icy/replace_terracottas",
+      "wythers:icy/mountains_replace_earth",
+      "wythers:icy/y82_87_simple_blue_ice",
+      "wythers:icy/plateaus_highland_ore_replace_gravel_to_snow",
+      "wythers:icy/range_ore_peak_snow",
       "minecraft:prototype_ore_dirt",
       "minecraft:prototype_ore_gravel",
       "minecraft:prototype_ore_granite",
@@ -64,30 +76,25 @@
       "minecraft:rare_small_dripstone"
     ],
     [
-      "minecraft:prototype_glow_lichen",
-      "minecraft:trees_snowy",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_badlands",
+      "minecraft:glow_lichen",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
-      "minecraft:lush_caves_clay",
-      "minecraft:lush_caves_vegetation",
-      "minecraft:rooted_azalea_trees",
-      "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
-     
+      "wythers:icy/cave_snow_layer",
+      "wythers:caves/glass_icicles",
+      "wythers:caves/glass_icicles_extension",
+      "wythers:caves/glass_icicles",
+      "wythers:caves/glass_icicles_extension"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
+    "more_structures:village_snowy_mountains",
+    "more_structures:pillager_outpost_snowy_mountains",
+    "more_structures:bastion_remnant_snowy_mountains",
     "minecraft:mineshaft",
     "minecraft:stronghold",
     "minecraft:ruined_portal_mountain"
@@ -152,6 +159,12 @@
     ],
     "creature": [
       {
+        "type": "minecraft:goat",
+        "weight": 12,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
         "type": "minecraft:rabbit",
         "weight": 10,
         "minCount": 2,
@@ -178,12 +191,6 @@
         "weight": 10,
         "minCount": 4,
         "maxCount": 6
-      },
-      {
-        "type": "minecraft:axolotl",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
       }
     ],
     "water_creature": [],
@@ -193,8 +200,8 @@
   "spawn_costs": {},
   "player_spawn_friendly": false,
   "precipitation": "snow",
-  "temperature": 0.0,
+  "temperature": 0,
   "downfall": 0.5,
   "category": "icy",
-  "depth": 0.45
+  "depth": 1.5
 }

@@ -1,18 +1,25 @@
 {
-  "scale": 0.4,
+  "scale": 0.5,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
-    "sky_color": 8625919,
-    "fog_color": 12638463,
+    "particle": {
+      "options": {
+        "type": "minecraft:white_ash"
+      },
+      "probability": 0.2
+    },
+    "sky_color": 16777215,
+    "fog_color": 13224393,
     "water_color": 4020182,
-    "water_fog_color": 329011
+    "water_fog_color": 329011,
+    "foliage_color": 7805192
   },
-  "surface_builder": "minecraft:grass",
+  "surface_builder": "wythers:snowy_rocky_mountains",
   "carvers": {
     "air": [
       "minecraft:prototype_cave",
@@ -21,13 +28,18 @@
     ]
   },
   "features": [
-    [],
     [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
+      "wythers:caves/ore_ice",
+      "wythers:taiga/snowy_mountains_highland_ore_replace_grass_to_snow",
+      "wythers:generic/feature_fallen_spruce_x",
+      "wythers:generic/feature_fallen_spruce_z"
     ],
     [
-      "minecraft:amethyst_geode"
+      "minecraft:lake_water"
+    ],
+    [
+      "minecraft:amethyst_geode",
+      "minecraft:large_dripstone"
     ],
     [
       "minecraft:monster_room"
@@ -35,6 +47,7 @@
     [],
     [],
     [
+      "wythers:icy/cave_snow_layer",
       "minecraft:prototype_ore_dirt",
       "minecraft:prototype_ore_gravel",
       "minecraft:prototype_ore_granite",
@@ -55,42 +68,33 @@
       "minecraft:prototype_ore_lapis_buried",
       "minecraft:prototype_ore_copper",
       "minecraft:prototype_underwater_magma",
-      "minecraft:disk_sand",
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "wythers:generic/disk_gravel_beach"
     ],
     [
       "minecraft:rare_dripstone_cluster",
-      "minecraft:rare_small_dripstone"
+      "minecraft:rare_small_dripstone",
+      "minecraft:dripstone_cluster",
+      "minecraft:small_dripstone"
     ],
     [
-      "minecraft:patch_large_fern",
-      "minecraft:prototype_glow_lichen",
-      "minecraft:taiga_vegetation",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_taiga_2",
-      "minecraft:brown_mushroom_taiga",
-      "minecraft:red_mushroom_taiga",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
-      "minecraft:patch_berry_decorated",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
-      "minecraft:lush_caves_clay",
-      "minecraft:lush_caves_vegetation",
-      "minecraft:rooted_azalea_trees",
-      "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "minecraft:glow_lichen",
+      "wythers:taiga/snowy_vegetation",
+      "wythers:taiga/snow_layers",
+      "wythers:caves/glass_icicles",
+      "wythers:caves/glass_icicles_extension",
+      "wythers:caves/glass_icicles",
+      "wythers:caves/glass_icicles_extension"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
+    "more_structures:village_snowy_taiga_mountains",
+    "more_structures:pillager_outpost_snowy_taiga_mountains",
+    "more_structures:bastion_remnant_snowy_taiga_mountains",
     "minecraft:mineshaft",
     "minecraft:stronghold",
     "minecraft:ruined_portal_mountain"
@@ -154,40 +158,28 @@
         "maxCount": 4
       },
       {
-        "type": "minecraft:pig",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:chicken",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:cow",
-        "weight": 8,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
         "type": "minecraft:wolf",
-        "weight": 8,
+        "weight": 4,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "minecraft:rabbit",
-        "weight": 4,
+        "weight": 10,
         "minCount": 2,
         "maxCount": 3
       },
       {
         "type": "minecraft:fox",
-        "weight": 8,
+        "weight": 6,
         "minCount": 2,
         "maxCount": 4
+      },
+      {
+        "type": "minecraft:cat",
+        "weight": 20,
+        "minCount": 1,
+        "maxCount": 2
       }
     ],
     "ambient": [
@@ -198,22 +190,15 @@
         "maxCount": 8
       }
     ],
-    "underground_water_creature": [
+    "water_creature": [],
+    "water_ambient": [
       {
-        "type": "minecraft:glow_squid",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
-      },
-      {
-        "type": "minecraft:axolotl",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
+        "type": "minecraft:salmon",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 5
       }
     ],
-    "water_creature": [],
-    "water_ambient": [],
     "misc": []
   },
   "spawn_costs": {},
@@ -222,5 +207,5 @@
   "temperature": -0.5,
   "downfall": 0.4,
   "category": "taiga",
-  "depth": 0.3
+  "depth": 1.2
 }

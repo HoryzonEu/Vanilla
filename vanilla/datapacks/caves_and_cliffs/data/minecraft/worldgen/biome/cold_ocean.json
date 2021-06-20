@@ -5,29 +5,30 @@
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
     "sky_color": 8103167,
     "fog_color": 12638463,
     "water_color": 4020182,
     "water_fog_color": 329011
   },
-  "surface_builder": "minecraft:grass",
+  "surface_builder": "wythers:deep_ocean",
   "carvers": {
     "air": [
       "minecraft:prototype_cave",
-      "minecraft:prototype_canyon"
+      "minecraft:prototype_canyon",
+      "minecraft:prototype_crevice"
+    ],
+    "liquid": [
+      "minecraft:underwater_canyon",
+      "minecraft:underwater_cave"
     ]
   },
   "features": [
     [],
+    [],
     [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
-    ],
-    [
-      "minecraft:amethyst_geode",
-      "minecraft:large_dripstone"
+      "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room"
@@ -55,36 +56,27 @@
       "minecraft:prototype_ore_lapis_buried",
       "minecraft:prototype_ore_copper",
       "minecraft:prototype_underwater_magma",
-      "minecraft:disk_sand",
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "wythers:generic/heightmap_ore_mossy_cobblestone",
+      "wythers:generic/heightmap_ore_mossy_cobblestone"
     ],
     [
       "minecraft:rare_dripstone_cluster",
-      "minecraft:rare_small_dripstone",
-      "minecraft:dripstone_cluster",
-      "minecraft:small_dripstone"
+      "minecraft:rare_small_dripstone"
     ],
     [
-      "minecraft:prototype_glow_lichen",
-      "minecraft:trees_water",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_badlands",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
+      "minecraft:glow_lichen",
       "minecraft:seagrass_cold",
       "minecraft:seagrass_simple",
       "minecraft:kelp_cold"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
+    "more_structures:bastion_remnant_cold_ocean",
     "minecraft:mineshaft",
     "minecraft:shipwreck",
     "minecraft:ocean_ruin_cold",
@@ -194,5 +186,5 @@
   "temperature": 0.5,
   "downfall": 0.5,
   "category": "ocean",
-  "depth": -1.0
+  "depth": -1
 }

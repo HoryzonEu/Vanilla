@@ -1,11 +1,11 @@
 {
-  "scale": 0.5,
+  "scale": 0.7,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
     "sky_color": 8233727,
     "fog_color": 12638463,
@@ -23,8 +23,7 @@
   "features": [
     [],
     [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
+      "minecraft:lake_water"
     ],
     [
       "minecraft:amethyst_geode"
@@ -35,6 +34,11 @@
     [],
     [],
     [
+      "wythers:taiga/replace_dirt_to_gravel",
+      "wythers:icy/mountains_replace_earth",
+      "wythers:mountains/replace_gravel_to_snow_block",
+      "wythers:mountains/replace_gravel_to_snow_block",
+      "wythers:mountains/replace_gravel_to_snow_block",
       "minecraft:prototype_ore_dirt",
       "minecraft:prototype_ore_gravel",
       "minecraft:prototype_ore_granite",
@@ -58,37 +62,34 @@
       "minecraft:disk_sand",
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
-      "minecraft:prototype_ore_emerald"
+      "minecraft:ore_emerald"
     ],
     [
       "minecraft:rare_dripstone_cluster",
       "minecraft:rare_small_dripstone",
-      "minecraft:prototype_ore_infested"
+      "minecraft:ore_infested"
     ],
     [
-      "minecraft:prototype_glow_lichen",
+      "minecraft:glow_lichen",
       "minecraft:trees_mountain",
-      "minecraft:flower_default",
+      "wythers:mountains/patch_flowers_single",
+      "wythers:mountains/patch_flowers_double",
       "minecraft:patch_grass_badlands",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
-      "minecraft:lush_caves_clay",
-      "minecraft:lush_caves_vegetation",
-      "minecraft:rooted_azalea_trees",
-      "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "minecraft:spring_water"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
+    "more_structures:village_modified_gravelly_mountains",
+    "more_structures:pillager_outpost_modified_gravelly_mountains",
+    "more_structures:bastion_remnant_modified_gravelly_mountains",
     "minecraft:mineshaft",
     "minecraft:stronghold",
     "minecraft:ruined_portal_mountain"
@@ -146,38 +147,14 @@
     ],
     "creature": [
       {
-        "type": "minecraft:sheep",
+        "type": "minecraft:goat",
         "weight": 12,
         "minCount": 4,
         "maxCount": 4
       },
       {
-        "type": "minecraft:pig",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:chicken",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:cow",
-        "weight": 8,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
         "type": "minecraft:llama",
-        "weight": 5,
-        "minCount": 4,
-        "maxCount": 6
-      },
-      {
-        "type": "minecraft:goat",
-        "weight": 10,
+        "weight": 12,
         "minCount": 4,
         "maxCount": 6
       }
@@ -190,22 +167,15 @@
         "maxCount": 8
       }
     ],
-    "underground_water_creature": [
+    "water_creature": [],
+    "water_ambient": [
       {
-        "type": "minecraft:glow_squid",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
-      },
-      {
-        "type": "minecraft:axolotl",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
+        "type": "minecraft:salmon",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 5
       }
     ],
-    "water_creature": [],
-    "water_ambient": [],
     "misc": []
   },
   "spawn_costs": {},
@@ -214,5 +184,5 @@
   "temperature": 0.2,
   "downfall": 0.3,
   "category": "extreme_hills",
-  "depth": 1.0
+  "depth": 2
 }

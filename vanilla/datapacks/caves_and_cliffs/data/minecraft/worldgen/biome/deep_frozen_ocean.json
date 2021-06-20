@@ -5,31 +5,46 @@
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
-    "sky_color": 8103167,
-    "fog_color": 12638463,
-    "water_color": 3750089,
-    "water_fog_color": 329011
+    "particle": {
+      "options": {
+        "type": "minecraft:white_ash"
+      },
+      "probability": 0.2
+    },
+    "sky_color": 13158625,
+    "fog_color": 14474485,
+    "water_color": 11517683,
+    "water_fog_color": 8821154
   },
-  "surface_builder": "minecraft:frozen_ocean",
+  "surface_builder": "wythers:deep_frozen_ocean",
   "carvers": {
     "air": [
       "minecraft:prototype_cave",
-      "minecraft:prototype_canyon"
+      "minecraft:prototype_canyon",
+      "minecraft:prototype_crevice"
+    ],
+    "liquid": [
+      "minecraft:underwater_canyon",
+      "minecraft:underwater_cave"
     ]
   },
   "features": [
+    [
+      "wythers:icy/ice_surface",
+      "wythers:icy/arctic_snow",
+      "wythers:icy/arctic_snow",
+      "wythers:icy/arctic_snow",
+      "wythers:icy/arctic_snow",
+      "wythers:icy/arctic_snow",
+      "wythers:icy/ice_floe"
+    ],
     [],
     [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
-    ],
-    [
-      "minecraft:iceberg_packed",
-      "minecraft:iceberg_blue",
       "minecraft:amethyst_geode",
-      "minecraft:large_dripstone"
+      "minecraft:iceberg_packed",
+      "minecraft:iceberg_blue"
     ],
     [
       "minecraft:monster_room"
@@ -37,7 +52,9 @@
     [
       "minecraft:blue_ice"
     ],
-    [],
+    [
+      "wythers:oceans/frozen_lower_ice"
+    ],
     [
       "minecraft:prototype_ore_dirt",
       "minecraft:prototype_ore_gravel",
@@ -61,31 +78,27 @@
       "minecraft:prototype_underwater_magma",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "minecraft:disk_gravel",
+      "wythers:oceans/disk_clay_deep_seafloor",
+      "wythers:oceans/frozen_lower_ice"
     ],
     [
       "minecraft:rare_dripstone_cluster",
-      "minecraft:rare_small_dripstone",
-      "minecraft:dripstone_cluster",
-      "minecraft:small_dripstone"
+      "minecraft:rare_small_dripstone"
     ],
     [
-      "minecraft:prototype_glow_lichen",
-      "minecraft:trees_water",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_badlands",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava"
+      "minecraft:glow_lichen",
+      "minecraft:spring_water",
+      "wythers:oceans/frozen_lower_ice"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
+    "more_structures:bastion_remnant_deep_frozen_ocean",
     "minecraft:ocean_ruin_cold",
     "minecraft:monument",
     "minecraft:mineshaft",
@@ -193,8 +206,8 @@
   },
   "spawn_costs": {},
   "player_spawn_friendly": false,
-  "precipitation": "rain",
-  "temperature": 0.5,
+  "precipitation": "snow",
+  "temperature": 0,
   "temperature_modifier": "frozen",
   "downfall": 0.5,
   "category": "ocean",

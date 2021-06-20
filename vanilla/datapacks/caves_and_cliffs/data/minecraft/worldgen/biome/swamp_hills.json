@@ -1,16 +1,16 @@
 {
-  "scale": 0.3,
+  "scale": 0.05,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
     "grass_color_modifier": "swamp",
-    "sky_color": 7907327,
     "foliage_color": 6975545,
-    "fog_color": 12638463,
+    "sky_color": 11842740,
+    "fog_color": 13158600,
     "water_color": 6388580,
     "water_fog_color": 2302743
   },
@@ -24,17 +24,18 @@
   },
   "features": [
     [],
+    [],
     [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
+      "minecraft:amethyst_geode",
+      "minecraft:large_dripstone",
+      "wythers:swamp/hills_vegetation",
+      "wythers:swamp/cypress/roots_1",
+      "wythers:swamp/cypress/roots_2",
+      "wythers:swamp/cypress/roots_3",
+      "wythers:swamp/cypress/roots_4"
     ],
     [
-      "minecraft:amethyst_geode"
-    ],
-    [
-      "minecraft:monster_room",
-      "minecraft:prototype_fossil_upper",
-      "minecraft:prototype_fossil_lower"
+      "minecraft:monster_room"
     ],
     [],
     [],
@@ -59,71 +60,76 @@
       "minecraft:prototype_ore_lapis_buried",
       "minecraft:prototype_ore_copper",
       "minecraft:prototype_underwater_magma",
-      "minecraft:disk_clay"
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
     ],
     [
       "minecraft:rare_dripstone_cluster",
-      "minecraft:rare_small_dripstone"
+      "minecraft:rare_small_dripstone",
+      "minecraft:dripstone_cluster",
+      "minecraft:small_dripstone"
     ],
     [
-      "minecraft:prototype_glow_lichen",
-      "minecraft:trees_swamp",
-      "minecraft:flower_swamp",
-      "minecraft:patch_grass_normal",
+      "minecraft:glow_lichen",
+      "minecraft:patch_large_fern",
       "minecraft:patch_dead_bush",
-      "minecraft:patch_waterlilly",
-      "minecraft:brown_mushroom_swamp",
-      "minecraft:red_mushroom_swamp",
+      "minecraft:patch_grass_jungle",
+      "wythers:generic/flower_lily_of_the_valley",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane_swamp",
-      "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
-      "minecraft:lush_caves_clay",
-      "minecraft:lush_caves_vegetation",
-      "minecraft:rooted_azalea_trees",
-      "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "minecraft:patch_sugar_cane",
+      "minecraft:spring_water",
+      "minecraft:patch_waterlilly",
+      "minecraft:seagrass_swamp",
+      "wythers:swamp/hills_heightmap_ore_soul_soil",
+      "wythers:swamp/hills_heightmap_ore_path",
+      "wythers:swamp/simple_moss_carpet_on_logs"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
-    "minecraft:mineshaft",
-    "minecraft:ruined_portal_swamp"
+    "more_structures:village_swamp_hills",
+    "more_structures:pillager_outpost_swamp_hills",
+    "more_structures:bastion_remnant_swamp_hills"
   ],
   "spawners": {
     "monster": [
       {
         "type": "minecraft:spider",
-        "weight": 100,
+        "weight": 20,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "minecraft:zombie",
-        "weight": 95,
+        "weight": 20,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "minecraft:zombie_villager",
-        "weight": 5,
+        "weight": 1,
         "minCount": 1,
         "maxCount": 1
       },
       {
         "type": "minecraft:skeleton",
-        "weight": 100,
+        "weight": 20,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "minecraft:creeper",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:stray",
         "weight": 100,
         "minCount": 4,
         "maxCount": 4
@@ -136,19 +142,13 @@
       },
       {
         "type": "minecraft:enderman",
-        "weight": 10,
+        "weight": 5,
         "minCount": 1,
         "maxCount": 4
       },
       {
         "type": "minecraft:witch",
         "weight": 5,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "minecraft:slime",
-        "weight": 1,
         "minCount": 1,
         "maxCount": 1
       }
@@ -208,8 +208,8 @@
   "spawn_costs": {},
   "player_spawn_friendly": false,
   "precipitation": "rain",
-  "temperature": 0.8,
-  "downfall": 0.9,
-  "category": "swamp",
+  "temperature": 0.7,
+  "downfall": 0.8,
+  "category": "forest",
   "depth": -0.1
 }

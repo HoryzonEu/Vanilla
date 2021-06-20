@@ -1,30 +1,29 @@
 {
-  "scale": 0.1,
+  "scale": 0.3,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
-    "sky_color": 8103167,
+    "sky_color": 5421806,
     "fog_color": 12638463,
     "water_color": 4445678,
     "water_fog_color": 270131
   },
-  "surface_builder": "minecraft:full_sand",
+  "surface_builder": "minecraft:grass",
   "carvers": {
     "air": [
       "minecraft:prototype_cave",
-      "minecraft:prototype_canyon"
-    ]
+      "minecraft:prototype_canyon",
+      "minecraft:prototype_crevice"
+    ],
+    "liquid": []
   },
   "features": [
     [],
-    [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
-    ],
+    [],
     [
       "minecraft:amethyst_geode"
     ],
@@ -34,6 +33,9 @@
     [],
     [],
     [
+      "wythers:warm_ocean/disk_sand_seafloor",
+      "wythers:warm_ocean/ore_replace_dirt_to_stone",
+      "wythers:warm_ocean/heightmap_ore_mossy_cobblestone",
       "minecraft:prototype_ore_dirt",
       "minecraft:prototype_ore_gravel",
       "minecraft:prototype_ore_granite",
@@ -54,44 +56,53 @@
       "minecraft:prototype_ore_lapis_buried",
       "minecraft:prototype_ore_copper",
       "minecraft:prototype_underwater_magma",
-      "minecraft:disk_sand",
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "wythers:warm_ocean/disk_dead_coral",
+      "wythers:generic/disk_sand_beach"
     ],
     [
       "minecraft:rare_dripstone_cluster",
-      "minecraft:rare_small_dripstone"
+      "minecraft:rare_small_dripstone",
+      "wythers:warm_ocean/cave_vines"
     ],
     [
-      "minecraft:prototype_glow_lichen",
-      "minecraft:trees_water",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_badlands",
+      "minecraft:glow_lichen",
+      "wythers:warm_ocean/island_vegetation",
+      "wythers:warm_ocean/patch_flowers_double",
+      "wythers:generic/flower_lily_of_the_valley",
+      "minecraft:patch_grass_jungle",
+      "minecraft:patch_sugar_cane_swamp",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
+      "minecraft:patch_melon",
+      "wythers:warm_ocean/patch_pineapple",
+      "wythers:warm_ocean/patch_pineapple_leaves",
+      "minecraft:spring_water",
+      "minecraft:spring_water",
+      "minecraft:spring_water",
       "minecraft:warm_ocean_vegetation",
       "minecraft:seagrass_warm",
       "minecraft:sea_pickle",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
-      "minecraft:lush_caves_clay",
-      "minecraft:lush_caves_vegetation",
-      "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "wythers:warm_ocean/patch_small_bamboo_base",
+      "wythers:warm_ocean/patch_small_bamboo_middle",
+      "wythers:warm_ocean/patch_small_bamboo_top",
+      "wythers:warm_ocean/cave_vines_extension",
+      "wythers:warm_ocean/cave_vines_extension",
+      "wythers:warm_ocean/cave_vines_extension"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
+    "more_structures:bastion_remnant_warm_ocean",
+    "minecraft:buried_treasure",
     "minecraft:ocean_ruin_warm",
     "minecraft:mineshaft",
     "minecraft:shipwreck",
-    "minecraft:ruined_portal_ocean"
+    "minecraft:ruined_portal_jungle"
   ],
   "spawners": {
     "monster": [
@@ -142,9 +153,40 @@
         "weight": 5,
         "minCount": 1,
         "maxCount": 1
+      },
+      {
+        "type": "minecraft:drowned",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
       }
     ],
-    "creature": [],
+    "creature": [
+      {
+        "type": "minecraft:turtle",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 6
+      },
+      {
+        "type": "minecraft:pig",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:chicken",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:parrot",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 6
+      }
+    ],
     "ambient": [
       {
         "type": "minecraft:bat",
@@ -200,8 +242,8 @@
   "spawn_costs": {},
   "player_spawn_friendly": false,
   "precipitation": "rain",
-  "temperature": 0.5,
-  "downfall": 0.5,
+  "temperature": 0.9,
+  "downfall": 0.8,
   "category": "ocean",
-  "depth": -1.0
+  "depth": -0.4
 }

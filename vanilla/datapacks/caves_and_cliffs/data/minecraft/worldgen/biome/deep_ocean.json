@@ -1,30 +1,29 @@
 {
-  "scale": 0.1,
+  "scale": 0.5,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
     "sky_color": 8103167,
     "fog_color": 12638463,
     "water_color": 4159204,
     "water_fog_color": 329011
   },
-  "surface_builder": "minecraft:grass",
+  "surface_builder": "wythers:deep_ocean",
   "carvers": {
     "air": [
       "minecraft:prototype_cave",
-      "minecraft:prototype_canyon"
-    ]
+      "minecraft:prototype_canyon",
+      "minecraft:prototype_crevice"
+    ],
+    "liquid": []
   },
   "features": [
     [],
-    [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
-    ],
+    [],
     [
       "minecraft:amethyst_geode"
     ],
@@ -54,42 +53,37 @@
       "minecraft:prototype_ore_lapis_buried",
       "minecraft:prototype_ore_copper",
       "minecraft:prototype_underwater_magma",
-      "minecraft:disk_sand",
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "wythers:oceans/disk_clay_deep_seafloor",
+      "wythers:oceans/disk_gravel_shore",
+      "wythers:oceans/ore_mossy_cobblestone_to_stone",
+      "wythers:oceans/ore_mossy_cobblestone_to_grass_block"
     ],
     [
       "minecraft:rare_dripstone_cluster",
       "minecraft:rare_small_dripstone"
     ],
     [
-      "minecraft:prototype_glow_lichen",
-      "minecraft:trees_water",
-      "minecraft:flower_default",
+      "minecraft:glow_lichen",
       "minecraft:patch_grass_badlands",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
-      "minecraft:seagrass_deep",
+      "minecraft:spring_water",
+      "minecraft:seagrass_normal",
       "minecraft:seagrass_simple",
       "minecraft:kelp_cold",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
-      "minecraft:lush_caves_clay",
-      "minecraft:lush_caves_vegetation",
-      "minecraft:rooted_azalea_trees",
-      "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "wythers:oceans/patch_mossy_stone_bricks_base",
+      "wythers:oceans/patch_mossy_stone_bricks_middle",
+      "wythers:oceans/patch_mossy_stone_bricks_top",
+      "wythers:generic/patch_grass_dense"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
-    "minecraft:monument",
+    "more_structures:bastion_remnant_deep_ocean",
     "minecraft:mineshaft",
     "minecraft:shipwreck",
     "minecraft:ocean_ruin_cold",
@@ -152,7 +146,14 @@
         "maxCount": 1
       }
     ],
-    "creature": [],
+    "creature": [
+      {
+        "type": "minecraft:sheep",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 8
+      }
+    ],
     "ambient": [
       {
         "type": "minecraft:bat",

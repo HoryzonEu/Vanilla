@@ -1,18 +1,19 @@
 {
-  "scale": 0.2,
+  "scale": 0.05,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
-    "sky_color": 8233983,
+    "foliage_color": 9298802,
+    "sky_color": 7972607,
     "fog_color": 12638463,
-    "water_color": 4159204,
-    "water_fog_color": 329011
+    "water_color": 3156992,
+    "water_fog_color": 2302743
   },
-  "surface_builder": "minecraft:giant_tree_taiga",
+  "surface_builder": "minecraft:grass",
   "carvers": {
     "air": [
       "minecraft:prototype_cave",
@@ -21,11 +22,13 @@
     ]
   },
   "features": [
-    [],
     [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
+      "wythers:taiga/cnb_spring_water",
+      "wythers:taiga/cnb_simple_grass_blocks",
+      "wythers:giant_taiga/feature_fallen_spruce_x",
+      "wythers:giant_taiga/feature_fallen_spruce_z"
     ],
+    [],
     [
       "minecraft:amethyst_geode",
       "minecraft:forest_rock"
@@ -56,46 +59,39 @@
       "minecraft:prototype_ore_lapis_buried",
       "minecraft:prototype_ore_copper",
       "minecraft:prototype_underwater_magma",
-      "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "minecraft:disk_gravel",
+      "wythers:taiga/disk_mossy_cobblestone"
     ],
     [
       "minecraft:rare_dripstone_cluster",
       "minecraft:rare_small_dripstone"
     ],
     [
+      "minecraft:glow_lichen",
+      "wythers:giant_taiga/temperate_rainforest_vegetation",
+      "wythers:generic/flower_azalea",
+      "minecraft:taiga_vegetation",
       "minecraft:patch_large_fern",
-      "minecraft:prototype_glow_lichen",
-      "minecraft:trees_giant_spruce",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_taiga",
       "minecraft:patch_dead_bush",
-      "minecraft:brown_mushroom_giant",
-      "minecraft:red_mushroom_giant",
+      "minecraft:patch_grass_jungle",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
-      "minecraft:patch_berry_sparse",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
-      "minecraft:lush_caves_clay",
-      "minecraft:lush_caves_vegetation",
-      "minecraft:rooted_azalea_trees",
-      "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "minecraft:spring_water",
+      "minecraft:vines",
+      "wythers:generic/simple_moss_in_mossy_cobblestone",
+      "wythers:generic/simple_moss_carpet_on_logs"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
-    "minecraft:mineshaft",
-    "minecraft:stronghold",
-    "minecraft:ruined_portal"
+    "more_structures:village_giant_spruce_taiga",
+    "more_structures:pillager_outpost_giant_spruce_taiga",
+    "more_structures:bastion_remnant_giant_spruce_taiga"
   ],
   "spawners": {
     "monster": [
@@ -143,53 +139,23 @@
       },
       {
         "type": "minecraft:witch",
-        "weight": 5,
+        "weight": 10,
         "minCount": 1,
         "maxCount": 1
       }
     ],
     "creature": [
       {
-        "type": "minecraft:sheep",
-        "weight": 12,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:pig",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:chicken",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:cow",
-        "weight": 8,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
         "type": "minecraft:wolf",
-        "weight": 8,
+        "weight": 2,
         "minCount": 4,
         "maxCount": 4
       },
       {
-        "type": "minecraft:rabbit",
-        "weight": 4,
-        "minCount": 2,
-        "maxCount": 3
-      },
-      {
-        "type": "minecraft:fox",
-        "weight": 8,
-        "minCount": 2,
-        "maxCount": 4
+        "type": "minecraft:polar_bear",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 1
       }
     ],
     "ambient": [
@@ -200,29 +166,22 @@
         "maxCount": 8
       }
     ],
-    "underground_water_creature": [
+    "water_creature": [],
+    "water_ambient": [
       {
-        "type": "minecraft:glow_squid",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
-      },
-      {
-        "type": "minecraft:axolotl",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
+        "type": "minecraft:salmon",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 5
       }
     ],
-    "water_creature": [],
-    "water_ambient": [],
     "misc": []
   },
   "spawn_costs": {},
   "player_spawn_friendly": false,
   "precipitation": "rain",
-  "temperature": 0.25,
+  "temperature": 0.7,
   "downfall": 0.8,
-  "category": "taiga",
-  "depth": 0.2
+  "category": "forest",
+  "depth": 0.025
 }

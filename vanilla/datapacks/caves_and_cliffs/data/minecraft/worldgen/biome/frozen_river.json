@@ -1,18 +1,24 @@
 {
-  "scale": 0.0,
+  "scale": 0,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
-    "sky_color": 8364543,
-    "fog_color": 12638463,
+    "particle": {
+      "options": {
+        "type": "minecraft:white_ash"
+      },
+      "probability": 0.2
+    },
+    "sky_color": 13158625,
+    "fog_color": 14474485,
     "water_color": 3750089,
     "water_fog_color": 329011
   },
-  "surface_builder": "minecraft:grass",
+  "surface_builder": "wythers:gravel",
   "carvers": {
     "air": [
       "minecraft:prototype_cave",
@@ -22,19 +28,19 @@
   },
   "features": [
     [],
-    [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
-    ],
+    [],
     [
       "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room"
     ],
-    [],
+    [
+      "wythers:icy/patch_deep_snow"
+    ],
     [],
     [
+      "wythers:icy/replace_terracottas",
       "minecraft:prototype_ore_dirt",
       "minecraft:prototype_ore_gravel",
       "minecraft:prototype_ore_granite",
@@ -55,28 +61,19 @@
       "minecraft:prototype_ore_lapis_buried",
       "minecraft:prototype_ore_copper",
       "minecraft:prototype_underwater_magma",
-      "minecraft:disk_sand",
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "wythers:generic/disk_clay"
     ],
     [
       "minecraft:rare_dripstone_cluster",
       "minecraft:rare_small_dripstone"
     ],
     [
-      "minecraft:prototype_glow_lichen",
-      "minecraft:trees_water",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_badlands",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava"
+      "minecraft:glow_lichen"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:caves/hanging_roots",
+      "wythers:caves/grass_roots"
     ]
   ],
   "starts": [
@@ -140,7 +137,14 @@
         "maxCount": 1
       }
     ],
-    "creature": [],
+    "creature": [
+      {
+        "type": "minecraft:polar_bear",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
     "ambient": [
       {
         "type": "minecraft:bat",
@@ -149,22 +153,7 @@
         "maxCount": 8
       }
     ],
-    "underground_water_creature": [
-      {
-        "type": "minecraft:glow_squid",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
-      }
-    ],
-    "water_creature": [
-      {
-        "type": "minecraft:squid",
-        "weight": 2,
-        "minCount": 1,
-        "maxCount": 4
-      }
-    ],
+    "water_creature": [],
     "water_ambient": [
       {
         "type": "minecraft:salmon",
@@ -178,8 +167,8 @@
   "spawn_costs": {},
   "player_spawn_friendly": false,
   "precipitation": "snow",
-  "temperature": 0.0,
-  "downfall": 0.5,
-  "category": "river",
-  "depth": -0.5
+  "temperature": -0.5,
+  "downfall": 0.4,
+  "category": "taiga",
+  "depth": -0.7
 }
