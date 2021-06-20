@@ -1,0 +1,7 @@
+Kaisyn:
+  - "manor", "sahara" structures by Kubek
+  - "castles" structure by Tetrajak
+Tractor:
+  - All structures by Bibanul Femeilor
+
+* More Structures Project 2021
